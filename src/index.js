@@ -15,6 +15,9 @@ dotenv.config();
 const uri = process.env.MONGO_DB_LINK;
 const PORT = 3000;
 
+app.get("/", (req,res)=>{
+    res.send("hello world");
+});
 
 // app.get("/deck",getDecksController);
 // app.post("/deck",createDeckController);
